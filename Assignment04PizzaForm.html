@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8"/>
+<link href="Assignment04PizzaForm.css" type="text/css" rel="stylesheet"/>
+</style>
 <title>Pizza Form</title>
 </head>
 <body>
@@ -10,17 +12,17 @@
 <h1>"Speedi-Drone Pizza" Custom Pizza Order Form</h1>
 <p>Design your very own pizza with this handy online order form. We'll have it dropped in you lap in 10 minutes or less or our name isn't <strong>Speedi-Drone Pizza!</strong></p>
 </header>
-<fieldset>
+<fieldset id="pizza">
 <legend>Pizza Details:</legend>
-<lable>Quantity:</lable><input type="number" maxlength="3" name="qty" id="quantity">
-<lable>Size:</lable><select name="size">
+<lable>Quantity: </lable><input type="number" maxlength="3" name="qty" id="quantity">
+<lable>Size: </lable><select name="size">
 <option value="Personal 4 slices">Personal 4 slices</option>
 <option value="Small 6 slices">Small 6 slices</option>
 <option value="Medium 8 slices">Medium 8 slices</option>
 <option value="Large 10 slices">Large 10 slices</option>
 <option value="Glutton 12 slices">Glutton 12 slices</option>
 </select>
-<fieldset>
+<fieldset id="base">
 <legend>Bases (choose one):</legend>
 <input type="radio" name="base" value="Red sauce"/>Red sauce
 <input type="radio" name="base" value="White sauce"/>White sauce
@@ -29,7 +31,7 @@
 <input type="radio" name="base" value="Pesto base"/>Pesto base
 <input type="radio" name="base" value="Castor oil"/>Castor oil
 </fieldset>
-<fieldset>
+<fieldset id="cheese">
 <legend>Cheeses (choose as many as you want):</legend>
 <input type="checkbox" name="cheese[]" value="Mozzarella" checked="checked"/>Mozzarella
 <input type="checkbox" name="cheese[]" value="Parmesan"/>Parmesan
@@ -37,7 +39,7 @@
 <input type="checkbox" name="cheese[]" value"Asiago"/>Asiago
 <input type="checkbox" name="cheese[]" value="Limburger"/>Limburger
 </fieldset>
-<fieldset>
+<fieldset id="meat">
 <legend>Meats (choose as many as you want):</legend>
 <input type="checkbox" name="meat[]" value="Pepperoni" checked="checked"/>Pepperoni
 <input type="checkbox" name="meat[]" value="Italian Sausage"/>Italian Sausage
@@ -45,7 +47,7 @@
 <input type="checkbox" name="meat[]" value="Ground Beef"/>Ground Beef
 <input type="checkbox" name="meat[]" value="Limburger"/>Limburger
 </fieldset>
-<fieldset>
+<fieldset id="veggies">
 <legend>Veggies (choose as many as you want):</legend>
 <input type="checkbox" name="veggies[]" value="Green Peppers"/>Green Peppers
 <input type="checkbox" name="veggies[]" value="Mushrooms"/>Mushrooms
@@ -54,17 +56,17 @@
 <input type="checkbox" name="veggies[]" value="Jalapenos"/>Jalapenos
 </fieldset>
 </fieldset>
-<fieldset>
+<fieldset id="customer">
 <legend>Customer Information</legend>
-<fieldset>
+<fieldset id="importante">
 <legend>Important!</legend>
 <p>Enter a valid e-mail address. Receipts and junk mail will be sent to this address:</p>
-<lable>Email: </lable><input type="email" name="emailaddress" id="email" required="required"/>
+<lable>Email: </lable><input type="email" name="emailaddress" id="email" required="required" size="50"/>
 </fieldset><br/>
-<lable>Name: </lable><input type="text" name="customername" id="name"/><br/><br/>
-<lable>Address: </lable><input type="text" name="address" id="address"/><br/><br/>
-<lable>City: </lable><input type="text" name="city" id="city"/><br/><br/>
-<lable>Phone: </lable><input type="tel" name="phone" id="phone"/>
+<lable>Name: </lable><input type="text" name="customername" id="name" size="50"/><br/><br/>
+<lable>Address: </lable><input type="text" name="address" id="address" size="50"/><br/><br/>
+<lable>City: </lable><input type="text" name="city" id="city" size="30"/><br/><br/>
+<lable>Phone: </lable><input type="tel" name="phone" id="phone" size="30"/>
 </fieldset>
 <p>Tell us how we're doing. If we like your comments, we'll send you a <strong>free</strong> Speedi-Drone plush toy!</p>
 <textarea name="comments" id="comments" maxlength="250" cols="100" rows="6">No more than 250 characters long -- but be sure to use lots of superlatives.</textarea><br/>
