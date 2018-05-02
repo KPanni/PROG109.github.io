@@ -4,7 +4,7 @@ font-family: arial,helvetica,sans-serif;
 color: white;
 }
 strong {
-	color: light-blue;
+	color: #F0F8FF;
 }
 #veggies, #cheese, #meat, #base, #pizza{
 padding: 20px 20px;
