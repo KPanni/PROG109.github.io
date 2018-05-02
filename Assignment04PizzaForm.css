@@ -1,0 +1,42 @@
+body { 
+background-color: #176C10;
+font-family: arial,helvetica,sans-serif;
+color: white;
+}
+strong {
+	color: blue;
+}
+#veggies, #cheese, #meat, #base, #pizza{
+padding: 20px 20px;
+padding-right: 50px;
+padding-left: 50px;
+margin-top: 20px;
+}
+#customer {
+padding: 20px 20px;
+padding-right: 50px;
+padding-left: 50px;
+margin-top: 20px;
+}
+#importante {
+	padding-left: 0px;
+	background-color: #9CA49C;
+}
+#name, #email{
+	margin-left: 20px;
+}
+#address {
+	margin-left: 4px;
+}
+#city {
+	margin-left: 35px;
+}
+#phone{
+	margin-left: 16px;
+}
+#veggies, #cheese, #meat, #base {
+	background-color: #9CA49C;
+}
+#pizza, #customer {
+	background-color: #33BE27;
+}
