@@ -1,4 +1,28 @@
-<DOCTYPE HTML!>
+<!DOCTYPE  html>
 <html>
-  <title>Number Guessing</title>
+<head>
+<meta charset="utf-8"/>
+<title>Number Guessing Game</title>
+<link rel="stylesheet" type="text/css" href="Numberguessgame.css">
+<script src="Numberguessgame.js"></script> 
+</head>
+	<body>
+		<div id="game">
+			<h1>What's My Number?!</h1>
+			<div id="statusArea">
+				<p>I'm thinking of a number between 1 and 20, can you guess what it is?!? Enter your guess below and click the button...</p>
+			</div>
+			<input type="number" id="userGuess"/>
+			<div></div>
+			<button id="buttonArea" class="button">
+				Guess!
+			</button>
+			<div id="historyArea">
+				<h2>Here's what you guessed so far!</h2>
+				<ol id="historyList">
+				</ol>
+			</div>
+			
+		</div>
+	</body>
 </html>
