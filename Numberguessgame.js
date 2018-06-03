@@ -1,6 +1,6 @@
 
 var secretNumber = 0,
-	numberOfGuesses = 5;
+	numberOfGuesses = 0;
 
 	
 	
@@ -22,7 +22,7 @@ function writeMessage(elementId, message, appendMessage) {
 
 function newGame() {
 	secretNumber = Math.floor(Math.random() * 20) + 1;
-	numberOfGuesses = 5;
+	numberOfGuesses = 0;
 	writeMessage('historyList', '');
 }
 
