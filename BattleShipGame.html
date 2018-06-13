@@ -2,8 +2,35 @@
 <html>
 <head>
 <title>Battle Ship Game</title>
-</head>
+	
+	<style>
+body {
+background-image:  url("images/background.png");
+background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+#GameWindow{
+background-color: #0A66D4;
+border-color:#0A66D4;
+border-style: solid ;
+padding: 20px;
+border-radius: 10px
+}
+td{
+    padding: 10px;
+    margin: 10px;
+}   
+.counter{
+height: 40px;
+width: 40px;
+}   
+</style>
+
+	</head>
 	<body>
+	<div id="GameWindow">
 <h1> It's Mini-Battleship!! Man the cannons....An enemy approaches!!</h1>
 <hr>
         
@@ -11,10 +38,10 @@
         <p>Guess a number between 1 and 20 to launch attack!</p>  
         
         </div>
-        <div id="GuessNumber">
+        <div id="GuessBox">
 
 
-        <p>Number of chances to engage the enemy!</p><!--add a image counter--> <img src="images/counter8.jpg" alt="Eight">
+        <p>Number of chances to engage the enemy!</p><!--add a image counter--> <img src="images/counter8.jpg" alt="Eight" class="counter">
         <input> 
         <button>Attack!</button>
         
@@ -54,6 +81,9 @@
     </script>
 	
 	</div>
-	
+	<div id="StatusArea">
+	<p>Here are your attemps so far...</p>
+	</div>
+	</div>
 </body>
 </html>
