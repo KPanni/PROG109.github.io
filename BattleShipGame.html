@@ -2,9 +2,10 @@
 <html>
 <head>
 <title>Battle Ship Game</title>
-<link rel="stylesheet" type="text/css" href="BattleShipGame.css">
-<script src="BattleShipGame.js"></script> 	
 	
+	<link rel="stylesheet" type="text/css" href="BattleShipGame.css">
+
+<script src="BattleShipGame.js"></script> 
 
 	</head>
 	<body>
@@ -16,15 +17,15 @@
         <p>Guess a number between 1 and 20 to launch attack!</p>  
         
         </div>
-        <div id="GuessBox">
+      
 
 
         <div id="ChanceCounter"><p>Number of chances to engage the enemy!</p><img align="right" src="images/counter8.jpg" alt="Eight" class="counter"></div>
- <br/>
-		<input> 
+ <br/> <br/> <br/> <br/>
+		<input id="GuessBox"> 
         <button>Attack!</button>
         
-  </div>      
+   
         
 <div id="GameBoard">
 <table border=2 >
@@ -54,9 +55,11 @@
 
 	
 	</div>
-	<div id="StatusArea">
+	
 	<p>Here are your attemps so far...</p>
+	<div id="StatusArea">
 	</div>
-	</div>
+	
+	  </div>   
 </body>
 </html>
