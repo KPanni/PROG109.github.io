@@ -1,6 +1,59 @@
-<DOCUTYPE! html>
+<!DOCTYPE  html>
 <html>
+<head>
 <title>Battle Ship Game</title>
+</head>
+	<body>
+<h1> It's Mini-Battleship!! Man the cannons....An enemy approaches!!</h1>
+<hr>
+        
+        <div id="GameStatus"> 
+        <p>Guess a number between 1 and 20 to launch attack!</p>  
+        
+        </div>
+        <div id="GuessNumber">
 
 
+        <p>Number of chances to engage the enemy!</p><!--add a image counter--> <img src="images/counter8.jpg" alt="Eight">
+        <input> 
+        <button>Attack!</button>
+        
+  </div>      
+        
+<div id="GameBoard">
+<table border=2 >
+<tr>
+<td id="one"></td>
+<td id="two"></td>
+<td id="three"> </td>
+<td id="four"> </td>
+<td id="five"> </td>
+<td id="six"> </td>
+<td id="seven"> </td>
+<td id="eight"> </td>
+<td id="nine"> </td>
+<td id="ten"> </td>
+<td id="eleven"> </td>
+<td id="twelve"> </td>
+<td id="thirteen"> </td>
+<td id="fourteen"> </td>
+<td id="fifteen"> </td>
+<td id="sixteen"> </td>
+<td id="seventeen"> </td>
+<td id="eighteen"> </td>
+<td id="nineteen"> </td>
+<td id="twenty"> </td>
+</table>
+   
+<script>
+    var x=document.querySelector("#three");
+        x.innerHTML="x";
+        x.style.backgroundColor="green";
+         x.style.color="red";
+         x.style.boarderColor="black";
+    </script>
+	
+	</div>
+	
+</body>
 </html>
