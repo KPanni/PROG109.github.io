@@ -10,21 +10,35 @@ background-size: cover;
   height: 100%;
   overflow: hidden;
 }
+#ChanceCounter{
+background-color: Navy;
+text-align: left;
+
+padding: 20px;
+}
+
 
 #GameWindow{
-background-color: #0A66D4;
-border-color:#0A66D4;
-border-style: solid ;
+text-align: center;
+position: center;
+background-color: SteelBlue;
+border-color:SteelBlue;
+border-style: double;
+margin: 40px;
 padding: 20px;
 border-radius: 10px
 }
+
+
 td{
+
     padding: 10px;
     margin: 10px;
 }   
 .counter{
-height: 40px;
-width: 40px;
+height: 30px;
+width: 30px;
+float: right;
 }   
 </style>
 
@@ -41,8 +55,9 @@ width: 40px;
         <div id="GuessBox">
 
 
-        <p>Number of chances to engage the enemy!</p><!--add a image counter--> <img src="images/counter8.jpg" alt="Eight" class="counter">
-        <input> 
+        <div id="ChanceCounter"><p>Number of chances to engage the enemy!</p><img align="right" src="images/counter8.jpg" alt="Eight" class="counter"></div>
+ <br/>
+		<input> 
         <button>Attack!</button>
         
   </div>      
