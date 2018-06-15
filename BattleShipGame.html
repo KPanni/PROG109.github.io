@@ -5,12 +5,14 @@
 	
 	<link rel="stylesheet" type="text/css" href="BattleShipGame.css">
 
-<script src="BattleShipGame.js"></script> 
+
 
 	</head>
 	<body>
 	<div id="GameWindow">
 <h1> It's Mini-Battleship!! Man the cannons....An enemy approaches!!</h1>
+
+
 <hr>
         
         <div id="GameStatus"> 
@@ -23,7 +25,7 @@
         <div id="ChanceCounter"><p>Number of chances to engage the enemy!</p><img align="right" src="images/counter8.jpg" alt="Eight" class="counter"></div>
  <br/> <br/> <br/> <br/>
 		<input id="GuessBox"> 
-        <button>Attack!</button>
+        <button onclick="fire()" >Attack!</button>
         
    
         
@@ -52,13 +54,12 @@
 <td id="twenty"> </td>
 </table>
    
-
+<script src="BattleShipGame.js"></script> 
 	
 	</div>
 	
 	<p>Here are your attemps so far...</p>
-	<div id="StatusArea">
-	</div>
+	<p id="StatusArea"></p>
 	
 	  </div>   
 </body>
